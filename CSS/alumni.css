@@ -1,0 +1,243 @@
+html{
+     scroll-behavior: smooth;
+}
+body{
+     font-family: 'Times New Roman', Times, serif;
+     background: linear-gradient(to bottom, #2e89ee 0%, white 35%);
+     align-items: center;
+     position: relative;
+     padding: 0%;
+     margin: 0%;
+}
+/* Gaya Umum untuk Header */
+.icon-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gaya untuk Logo */
+.icon-header .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Gaya untuk Judul */
+.judul-teks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+/* Judul styling */
+.judul-teks h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: white;
+}
+
+/* Gaya Navigasi */
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya Tombol Navigasi */
+.navbar li a {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: white;
+    color: #2e89ee;
+    font-weight: bold;
+}
+
+.garis{
+     padding: 0 10px;
+}
+/* Garis Horizontal */
+.garis hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+.main-alumni {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.main-alumni h2 {
+  color: white;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.pinture-alumni,
+.picture-alumni {
+  display: none;
+}
+
+.pinture-alumni:first-of-type {
+  display: block;
+}
+
+.picture-alumni img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: 0.5s ease-in-out;
+}
+
+.dot-container {
+  text-align: center;
+  margin-top: 15px;
+  padding: 10px 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #2e89ee;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 16px;
+  border: 2px solid #2e89ee;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dot:hover {
+  background-color: #2e89ee;
+  color: #fff;
+  border-color: #2e89ee;
+  transform: scale(1.1);
+}
+
+.dot.active {
+  background-color: #2e89ee;
+  color: #fff;
+  border-color: #2e89ee;
+  box-shadow: 0 4px 10px #2e89ee;
+}
+
+.container-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.container-contact h1 {
+  color: #2e89ee;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.container-contact h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.information-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+  justify-items: center;
+}
+
+.card-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #2e89ee;
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 260px;
+  cursor: pointer;
+  background-color: white; /* tambahan warna putih */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* tambahan shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.card-contact:hover {
+  box-shadow: 0 0 10px #2e89ee;
+}
+
+.card-contact img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain; /* supaya proporsi tetap terjaga */
+}
+
+
+.info-contact {
+  display: flex;
+  flex-direction: column; /* supaya p dan a ditumpuk */
+  align-items: flex-start; /* rata kiri */
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.info-contact p,
+.info-contact a {
+  margin: 0; /* hilangkan margin default */
+  padding: 0;
+  text-align: left; /* pastikan rata kiri */
+}
+.info-contact p a{
+     color: rgb(0, 0, 0);
+     text-decoration: none;
+}
+.info-contact a{
+     color: #2e89ee;
+}
+
+.footer {
+  background-color: #2e89ee;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+.footer p a{
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 14px;
+     cursor: pointer;
+}

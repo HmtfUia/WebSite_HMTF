@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Alumni Informatika Uia</title>
+     <link rel="stylesheet" href="../CSS/alumni.css">
+</head>
+<body> <!-- Body -->
+     <!-- Header -->
+     <div class="header">
+          <div class="icon-header">
+               <img src="../asset/Uia.png" alt="" class="logo">
+               <img src="../asset/Informatika.png" alt="" class="logo">
+               <!-- Teks Di samping logo dalam header -->
+               <div class="judul-teks">
+                    <h4>HIMPUNAN MAHASISWA TEKNIK INFORMATIKA</h4>
+                    <h4>UNIVERSITAS ISLAM AS-SYAFI'IYAH</h4>
+               </div>
+               <!-- NavBar -->
+               <ul class="navbar">
+                    <li><a href="../index.html">Beranda</a></li>
+                    <li><a href="../DOSEN/dosen.html">Dosen</a></li>
+                    <li><a href="../ALUMNI/alumni_1.html">Alumni</a></li>
+               </ul>
+          </div>
+          <div class="garis"><hr></div>
+          <!-- main-alumni -->
+          <div class="main-alumni">
+               <h2>Testimony Alumni Informatics</h2>
+               <div class="picture-alumni">
+                    <img src="../asset/alumni-1.png" alt="alumni-1">
+               </div>
+               <div class="picture-alumni">
+                    <img src="../asset/alumni-2.png" alt="alumni-2">
+               </div>
+               <div class="picture-alumni">
+                    <img src="../asset/alumni-3.png" alt="alumni-3">
+               </div>
+               <div class="picture-alumni">
+                    <img src="../asset/alumni-4.png" alt="alumni-4">
+               </div>
+               <div class="picture-alumni">
+                    <img src="../asset/alumni-5.png" alt="alumni-5">
+               </div>
+
+               <!-- Dots Numbering -->
+               <div class="dot-container">
+                    <span class="dot" onclick="currentSlide(1)">1</span>
+                    <span class="dot" onclick="currentSlide(2)">2</span>
+                    <span class="dot" onclick="currentSlide(3)">3</span>
+                    <span class="dot" onclick="currentSlide(4)">4</span>
+                    <span class="dot" onclick="currentSlide(5)">5</span>
+               </div>   
+          </div>
+          <!-- Contact -->
+          <div class="container-contact">
+               <h1>Connet With Our Team</h1>
+               <h3>Yuk, kita saling terhubung dan berkolaborasi. Jangan Jangan ragu untuk<br>
+                    menghubungi kami melalui [kontak utama atau platform komunikasi]<br>
+                    untuk berdiskusi lebih lanjut.</h3>
+                    <div class="information-contact">
+                         <!-- Email -->
+                         <div class="email">
+                              <div class="card-contact">
+                                   <img src="../icon-contact/email.png" alt="">
+                                   <div class="info-contact">
+                                        <p>Email</p>
+                                        <a href="https://wasap.at/eKglDV">hmtf.fst@uia.ac.id</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- WhatsApp -->
+                         <div class="whatsapp">
+                              <div class="card-contact">
+                                   <a href="https://wasap.at/eKglDV"><img src="../icon-contact/whatsapp.png" alt=""></a>
+                                   <div class="info-contact">
+                                        <p><a href="https://wasap.at/eKglDV">WhatsApp</a></p>
+                                        <a href="https://wasap.at/eKglDV">089635618750</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- Instagram -->
+                         <div class="instagram">
+                              <div class="card-contact">
+                                   <a href="https://www.instagram.com/hmtf_uia/?next=%2F"><img src="../icon-contact/instagram.png" alt=""></a>
+                                   <div class="info-contact">
+                                        <p><a href="https://www.instagram.com/hmtf_uia/?next=%2F">Instagram</a></p>
+                                        <a href="https://www.instagram.com/hmtf_uia/?next=%2F">@hmtf_uia</a>
+                                   </div>
+                              </div>
+                         </div>
+                         <!-- Lokasi -->
+                         <div class="lokasi">
+                              <div class="card-contact">
+                                   <a href="https://maps.app.goo.gl/jufPF3qQrmhJ5ao88"><img src="../icon-contact/lokasi.png" alt=""></a>
+                                   <div class="info-contact">
+                                        <p><a href="https://maps.app.goo.gl/jufPF3qQrmhJ5ao88">Lokasi</a></p>
+                                        <a href="https://maps.app.goo.gl/jufPF3qQrmhJ5ao88">Jl. Raya Jatiwaringin</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+          </div>
+          <!-- Footer -->
+          <div class="footer">
+               <p><a href="#" id="backToTop">HIMPUNAN MAHASISWA TEKNIK INFORMATIKA.</a></p>
+          </div>
+     </div>
+     
+</body>
+<script>
+let slideIndex = 0;
+let timer;
+
+function showSlides() {
+  let slides = document.querySelectorAll(".pinture-alumni, .picture-alumni");
+  let dots = document.querySelectorAll(".dot");
+
+  // Sembunyikan semua slide
+  slides.forEach(slide => slide.style.display = "none");
+  dots.forEach(dot => dot.classList.remove("active"));
+
+  slideIndex++;
+  if (slideIndex > slides.length) slideIndex = 1;
+
+  slides[slideIndex - 1].style.display = "block";
+  dots[slideIndex - 1].classList.add("active");
+
+  timer = setTimeout(showSlides, 5000); // 5 detik
+}
+
+function currentSlide(n) {
+  clearTimeout(timer); // stop otomatis saat klik dot
+  slideIndex = n - 1;
+  showSlides();
+}
+
+window.onload = showSlides;
+</script>
+</html>

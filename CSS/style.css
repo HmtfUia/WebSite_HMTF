@@ -1,0 +1,327 @@
+html{
+     scroll-behavior: smooth;
+}
+
+body{
+     font-family: 'Times New Roman', Times, serif;
+     background: linear-gradient(to bottom, #2e89ee 0%, white 35%);
+     align-items: center;
+     position: relative;
+     padding: 0%;
+     margin: 0%;
+}
+/* Gaya Umum untuk Header */
+.icon-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Gaya untuk Logo */
+.icon-header .logo {
+    height: 40px;
+    margin-right: 10px;
+}
+
+/* Gaya untuk Judul */
+.judul-teks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+    flex-grow: 1;
+}
+
+/* Judul styling */
+.judul-teks h4 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.4;
+    color: white;
+}
+
+/* Gaya Navigasi */
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+}
+
+/* Gaya Tombol Navigasi */
+.navbar li a {
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 6px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar li a:hover {
+    background-color: white;
+    color: #2e89ee;
+    font-weight: bold;
+}
+
+.garis{
+     padding: 0 10px;
+}
+/* Garis Horizontal */
+.garis hr {
+    margin: 0;
+    border: none;
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+}
+
+/* Container utama untuk welcome section */
+.container {
+  display: flex;
+  align-items: center;      /* Vertikal tengah */
+  justify-content: center;  /* Horizontal tengah */
+  gap: 290px;                /* Jarak antara teks dan logo */
+  padding: 80px 20px 100px; /* Padding atas dan bawah, beri ruang bawah untuk transisi */
+  width: 100%;              /* Full lebar */
+  max-width: 1200px;        /* Maksimal lebar konten */
+  margin: 0 auto;           /* Tengah horizontal */
+  color: rgb(0, 0, 0);
+}
+
+/* Container teks judul di dalam .container */
+.container .text-content {
+  max-width: 600px; /* supaya teks tidak terlalu lebar */
+}
+
+/* Styling judul utama */
+.container h1 {
+  font-size: 60px;
+  font-weight: 800;
+  margin: 0 0 10px 0; /* Beri jarak bawah agar tidak terlalu menempel */
+  line-height: 1.1;
+}
+
+/* Styling subjudul dan underline */
+.container h2 {
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  margin: 0 0 15px 0;
+  line-height: 1.2;
+}
+
+/* Styling untuk paragraf */
+.container h3 {
+  font-size: 16px;
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Logo IT */
+.icon-container {
+  position: relative; /* pos relative agar mudah diatur */
+  top: auto;          /* reset posisi */
+  right: auto;        /* reset posisi */
+  height: 300px;
+  width: 300px;
+  flex-shrink: 0;     /* jangan mengecil */
+}
+
+.icon-container img {
+  height: 100%;
+  width: auto;
+  display: block;
+}
+
+/* Informatic News - beri jarak dari welcome */
+.informatic-news {
+  padding: 60px 20px 80px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+.informatic-news h1 {
+  text-align: center;
+  font-size: 50px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.content-1 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 270px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+.card img {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ddd;
+  border-radius: 5px 5px 0 0;
+}
+
+.card p {
+  padding: 15px 20px 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #111;
+}
+
+.label-by p {
+  padding: 0 20px 20px;
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.label-by a {
+  color: #2e89ee;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.label-by a:hover {
+  text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 1024px) {
+  .card {
+    width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  .content-1 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 30px;
+  }
+}
+
+.content-2 {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 60px; /* beri jarak dari grid pertama */
+}
+
+/* .card dan styling lainnya sama seperti sebelumnya */
+
+
+.container-contact {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 40px 20px;
+}
+
+.container-contact h1 {
+  color: #2e89ee;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.container-contact h3 {
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 40px;
+  line-height: 1.4;
+}
+
+.information-contact {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+  justify-items: center;
+}
+
+.card-contact {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 2px solid #2e89ee;
+  border-radius: 8px;
+  padding: 12px 20px;
+  width: 260px;
+  cursor: pointer;
+  background-color: white; /* tambahan warna putih */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* tambahan shadow */
+  transition: box-shadow 0.3s ease;
+}
+
+.card-contact:hover {
+  box-shadow: 0 0 10px #2e89ee;
+}
+
+.card-contact img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain; /* supaya proporsi tetap terjaga */
+}
+
+
+.info-contact {
+  display: flex;
+  flex-direction: column; /* supaya p dan a ditumpuk */
+  align-items: flex-start; /* rata kiri */
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+}
+
+.info-contact p,
+.info-contact a {
+  margin: 0; /* hilangkan margin default */
+  padding: 0;
+  text-align: left; /* pastikan rata kiri */
+}
+.info-contact p a{
+     color: rgb(0, 0, 0);
+     text-decoration: none;
+}
+.info-contact a{
+     color: #2e89ee;
+}
+
+.footer {
+  background-color: #2e89ee;
+  text-align: center;
+  padding: 15px 0;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+.footer p a{
+     color: white;
+     text-decoration: none;
+     font-weight: bold;
+     font-size: 14px;
+     cursor: pointer;
+}
+
+
